@@ -1,0 +1,22 @@
+﻿@model PredictPriceWeb.Models.Predict
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Stock Prediction</h1>
+    <div id="sectionFreeText">
+        <input type="file" id="Files" name="Files" asp-for="files" webkitdirectory multiple class="btn btn-primary shadow-lg" />
+    </div><br>
+    <div action="submit">
+        <a href="" title="Predict" data-bs-toggle="tooltip" data-toggle="tooltip" class="btn btn-dark" onclick="PredictScore() ;return false">
+         Predict Score
+        </a>
+
+    </div>
+</div>
+
+@section scripts {
+
+    <script src="~/js/predictscore.js"></script>
+}

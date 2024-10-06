@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PredictPriceWeb.props" />
+</Project>
